@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <a href="index.html">Home</a>
+        <form action="FirstServlet" method="post">
+            <input type ="text" name="txt1"/>
+            <input type="submit" value="find" name="txt2"/>
+        </form>
+        <a href="SecondServlet">Second Servlet</a>
+        <a href="ThirdServlet?msg=emyeuco">ThirdServlet</a>
+        <form action="RehisterServlet" method="post">
+            <h1>Dang ki tai khoan</h1>
+            <table>
+                <tr><td>avatar</td>
+                    <td><input type="file" name="txtavatar"/></td>
+                </tr>
+                <tr>
+                    <td> full name</td>
+                    <td><input type="text" name="txtfullname" required="" />*</td>
+                </tr>
+                <tr>
+                    <td>password</td> 
+                    <td><input type="text" name="txtpassword" required=""/>*</td>
+                </tr>
+                <tr>
+                    <td> email</td>
+                    <td><input type="text" name="txtemail" required="" />*</td>
+                </tr>
+                <tr>
+                    <td>repassword</td> 
+                    <td><input type="text" name="txtrepassword" required="" />*</td>
+                </tr>
+                <tr>
+                    <td>job</td> 
+                    <td><select name="txtjob"> 
+                            <option value="student">student</option>
+                            <option value="shipper">shipper</option>
+                            <option value="gymer">gymer</option>
+                        </select>
+                </tr>
+                <tr>
+                    <td>sex</td>
+                    <td><input type ="radio" name="txtsex" value="female" checked="">female
+                        <input type="radio" name="txtsex" value="male" checked="">male                    
+                    </td>
+                </tr>
+                <tr><td colspan="2"><input type="submit" value="register"></td></tr>
+            </table>
+                </form>
+    </body>
+</html>
